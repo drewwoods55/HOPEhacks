@@ -1,0 +1,14 @@
+{
+  "name": "yelp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "yelp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yelp-api": "^1.0.3"
+  }
+}
