@@ -77,7 +77,7 @@
 }
 
 .navbar__links:hover {
-    color: aqua;
+    color: orangered;
     transition: all 0.3s ease;
 }
 
@@ -99,8 +99,8 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        top: -1000px;
-        opacity: 0;
+        /* top: -1000px;
+        opacity: 0; */
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
@@ -121,7 +121,7 @@
         padding-left: 25px;
     }
 
-    .navbar__toggle.bar {
+    .navbar__toggle .bar {
         width: 25px;
         height: 3px;
         margin: 5px auto;
@@ -147,7 +147,7 @@
     transform: translate(5%, 20%);  
     }
 
-    .navbar__toggle.bar {
+    .navbar__toggle .bar {
         display: block;
         cursor: pointer;
     }
@@ -164,3 +164,105 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+
+
+
+
+
+
+
+/*------- Footer Area Start -----------*/
+.footer-icons ul li {
+    display: inline-block;
+  }
+  
+  .footer-icons ul li a {
+    border: 1px solid #444;
+    color: #444;
+    display: block;
+    font-size: 16px;
+    height: 40px;
+    line-height: 38px;
+    margin-right: 5px;
+    text-align: center;
+    width: 40px;
+    border-radius: 50%;
+  }
+  
+  .footer-icons {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .footer-contacts p span {
+    color: #3EC1D5;
+    font-weight: 700;
+  }
+  
+  .popular-tag ul li {
+    display: inline-block;
+  }
+  
+  .footer-content {
+    display: block;
+    overflow: hidden;
+  }
+  
+  .popular-tag ul li a:hover, 
+  .footer-icons ul li a:hover {
+    background: #3EC1D5;
+    border: 1px solid #3EC1D5;
+    color: #fff;
+  }
+  
+  .popular-tag ul li a {
+    border: 1px solid #444;
+    border-radius: 30px;
+    color: #333;
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 5px 3px;
+    padding: 5px 10px;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.4s ease 0s;
+    width: 70px;
+    text-align: center;
+  }
+  
+  .footer-area-bottom {
+    background: #f1f1f1 none repeat scroll 0 0;
+    padding: 15px 0;
+  }
+  
+  .copyright-text a:hover {
+    text-decoration: underline;
+    color: #3EC1D5;
+  }
+  
+  .copyright-text a {
+    color: #444;
+  }
+  
+  .copyright> p {
+    margin-bottom: 0;
+    color: #444;
+  }
+  
+  .credits {
+    padding-top: 5px;
+    text-align: center;
+  }
+  
+  .credits a {
+    color: #000;
+  }
+
+ @media only screen and (max-width:800px){
+    header{
+        height:70vh;
+    }
+ }
