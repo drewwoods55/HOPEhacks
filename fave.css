@@ -1,0 +1,37 @@
+h1{
+font-size:25px;
+text-align:center;
+ font-family: copperplate;
+ color: #E85A4F;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+  .container{
+    list-style-type:none;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-gap: 2em;
+    padding: 50px 100px;
+  }
+  
+  .cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  
+h2{
+  font-size:25px;
+  text-align:center;
+  font-family: copperplate;
+ color: #E85A4F;
+}
