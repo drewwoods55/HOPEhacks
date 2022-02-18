@@ -16,9 +16,9 @@ yelp.query('businesses/search', params)
 
   console.log(data)
 
-  for(let i = 0; i < matches.length; i++) {
-    console.log(matches[i].name)
-  }
+//   for(let i = 0; i < matches.length; i++) {
+//     console.log(matches[i].name)
+//   }
   
 })
 .catch(err => {
