@@ -196,17 +196,6 @@
   -moz-text-fill-color: transparent;
 }
 
-.main__content h2{
-  font-size: 4rem;
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
 .main__content p {
   margin-top: 1rem;
   font-size: 2rem;
@@ -216,7 +205,7 @@
 
 .main__btn {
   font-size: 1rem;
-  background-image: linear-gradient(top top, #f77062 0%, #fe5196 100%);
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
   padding: 14px 32px;
   border: none;
   border-radius: 4px;
@@ -236,23 +225,23 @@
 }
 
 .main__btn:after {
-  position: fixed;
+  position: absolute;
   content: '';
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-  background: pink;
-  transform: all 0.35s;
+  background: lime;
+  transition: all 0.35s;
   border-radius: 4px;
 }
 
 .main__btn:hover {
-  color: black;
+  color: white;
 }
 
 .main__btn:hover:after {
-  width: 1005;
+  width: 100%;
 }
 
 .main__img--container {
@@ -286,9 +275,6 @@
     margin-top: 2rem;
   }
 
-  .main__content h2 {
-    font-size: 3rem;
-  }
 
   .main__content p {
     margin-top: 1rem;
@@ -300,10 +286,6 @@
   .main__content h1 {
     font-size: 2rem;
     margin-top: 3rem;
-  }
-
-  .main__content h2 {
-    font-size: 2rem;
   }
 
   .main__content p {
@@ -327,16 +309,39 @@
   height: 100vh;
 }
 
-.services h1 {
-  background-color: #ff8177;
-  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b1285b 100%);
-  background-size: 100%;
-  margin-bottom: 5rem;
-  font-size: 2.5rem;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+.denied {
+  position: relative;
+  padding-right: 70%;
+  top: 20%;
+}
+
+.liked {
+  position: relative;
+  padding-left: 70%;
+}
+
+.swiping__container {
+  background-color: red;
+  width: 60%;
+  min-width: 520px;
+  position: relative;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.image__container {
+  position: relative;
+  width: 100%;
+  border: 1px solid black;
+}
+
+img {
+  width: 100%;
+  position: relative;
 }
 
 
