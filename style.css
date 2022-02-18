@@ -30,7 +30,7 @@
 
 #navbar__logo {
     background-color: black;
-    background-image: linear-gradient(to top, black 0%, #ffb199 100%);
+    background-image: linear-gradient(to top, white 0%, #ff0844 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -81,7 +81,7 @@
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 800px) {
     .navbar__container {
         display: flex;
         justify-content: space-between;
@@ -318,6 +318,7 @@
 .liked {
   position: relative;
   padding-left: 70%;
+
 }
 
 .swiping__container {
@@ -326,8 +327,8 @@
   min-width: 520px;
   position: relative;
   transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
+  left: 30%;
+  top: 15%;
   border-radius: 5px;
   padding: 30px;
   box-shadow: 0 15px 30px rgba(0,0,0,0.3);
@@ -339,14 +340,15 @@
   border: 1px solid black;
 }
 
-img {
-  width: 100%;
+#content1 {
   position: relative;
+  width: 100%;
+  display: none;
 }
 
-
-
-
+.active {
+  display: block;
+}
 
 
 
@@ -444,8 +446,3 @@ img {
     color: #000;
   }
 
- @media only screen and (max-width:800px){
-    header{
-        height:70vh;
-    }
- }
