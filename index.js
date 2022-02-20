@@ -3,10 +3,12 @@ const app = express()
 const request = require("request");
 const bodyParser = require('body-parser');
 let yelpAPI = require('yelp-api');
+const { on } = require('nodemon');
 let apiKey = "ISf113DyzF1u1R1vkBRkq3InpLkuVexUWUG1JNoHR1UdtL-bMy4SdObvqD_2te27iSrG97iSxZdSlBI02Mmttnn_B2_GrCcXIzD2O4oB0GlJ31N1F9AvomYz3CwMYnYx"
 let yelp = new yelpAPI(apiKey);
 nextButton = 
 goToNext = 
+
 
 // app.use(express.static('public'));
 
@@ -38,13 +40,32 @@ app.get('/api', (req, res) => {
             let response = JSON.parse(data)
             let matches = response.businesses
             //save the response 
-            
-            // console.log(data)
+            console.log(matches.length)
+            console.log(data)
 
+            var restaurantList = [];
             for(let i = 0; i < matches.length; i++) {
-                console.log(matches[i].name)
+                var oneRestaurant = {};
+                oneRestaurant['name']= matches[i].name;
+                oneRestaurant['image_url'] = matches[i].image_url;
+                oneRestaurant['rating']= matches[i].rating;
+                restaurantList.push(oneRestaurant);
+                // console.log(matches[i].name)
+            
                 name = matches[i].name
+                console.log(oneRestaurant)
+                // res.json(matches[i])
+
+
+                
             }
+            res.json(restaurantList)
+            // const html = `<div>
+            // <p>Name: ${restaurantList[0].name}</p>
+            // </>`
+            // document.querySelector("#app").insertAdjacentHTML("afterbegin",html);
+            //res.json(restaurantList.json)
+            // res.json(matches.json)
         })
         .catch(err => {
             // Failure
@@ -53,7 +74,7 @@ app.get('/api', (req, res) => {
         });
 
     console.log('route hit')
-    // res.json(results)
+    
 })
 
 
