@@ -21,3 +21,8 @@ var restaurantList = [];
 //     menuLinks.classList.toggle('active');
 // });
 
+document.getElementById('denied').onclick = function changeContent() {
+    
+
+    
+    }
