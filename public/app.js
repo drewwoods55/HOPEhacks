@@ -1,7 +1,6 @@
 // const menu = document.querySelector('3mobile-menu')
 // const menuLinks = document.querySelector('.navbar__menu')
 
-<<<<<<< HEAD
 // const { response } = require("express")
 
 // menu.addEventListener('click', function(){
@@ -23,10 +22,3 @@ function fetchData(){
   })
 }
 fetchData()
-=======
-menu.addEventListener('click', function(){
-    menu.classList.toggle('is-active');
-    menuLinks.classList.toggle('active');
-});
-
->>>>>>> f7b7c4ec70333827050c90bb008ca9928e567861
