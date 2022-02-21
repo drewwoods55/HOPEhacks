@@ -186,6 +186,13 @@
 
 .main__img--container {
   text-align: center;
+  max-width: 50px;
+}
+.image__container{
+  max-width: 100px;
+}
+.yelp_image{
+  max-width: 100px;
 }
 
 #main__img {
