@@ -245,15 +245,16 @@
 }
 
 .denied {
-  position: relative;
-  padding-right: 70%;
-  top: 20%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
   color: red;
 }
 
 .liked {
-  position: absolute;
-  padding-left: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
   color: green;
 }
 
