@@ -9,7 +9,11 @@ const mainBtn = document.querySelector()
 >>>>>>> 8c079df939bb14636cfef582fdb94967bea31f84
 // const menu = document.querySelector('3mobile-menu')
 // const menuLinks = document.querySelector('.navbar__menu')
+<<<<<<< HEAD
+
+=======
 var restaurantList = [];
+>>>>>>> 7047c98ca485051c759fc9fbc82fd6bb2e3ce91f
 // const { response } = require("express")
 
 // menu.addEventListener('click', function(){
@@ -39,6 +43,8 @@ document.getElementById('denied').onclick = function changeContent() {
   })
 }
 fetchData()
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 57f51705c6321da28a0b736e1ddb67c935bb9286
 menu.addEventListener('click', function(){
@@ -56,3 +62,4 @@ function toSwipe() {
 >>>>>>> f7b7c4ec70333827050c90bb008ca9928e567861
 >>>>>>> 57f51705c6321da28a0b736e1ddb67c935bb9286
 >>>>>>> 8c079df939bb14636cfef582fdb94967bea31f84
+>>>>>>> 7047c98ca485051c759fc9fbc82fd6bb2e3ce91f
