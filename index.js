@@ -1,10 +1,12 @@
 const express = require('express')
 const app = express()
 const request = require("request");
-const bodyParser = require('body-parser')
-let yelpAPI = require('yelp-api')
+const bodyParser = require('body-parser');
+let yelpAPI = require('yelp-api');
 let apiKey = "ISf113DyzF1u1R1vkBRkq3InpLkuVexUWUG1JNoHR1UdtL-bMy4SdObvqD_2te27iSrG97iSxZdSlBI02Mmttnn_B2_GrCcXIzD2O4oB0GlJ31N1F9AvomYz3CwMYnYx"
 let yelp = new yelpAPI(apiKey);
+nextButton = 
+goToNext = 
 
 // app.use(express.static('public'));
 
@@ -27,6 +29,8 @@ app.get('/api', (req, res) => {
     // Set any parameters, if applicable (see API documentation for allowed params)
     let params = [{ location: 'Charlotte, NC', categories: 'vegan' }]
     let results = {}
+    let name = 
+
     // Call the endpoint
     yelp.query('businesses/search', params)
         .then(data => {
@@ -39,8 +43,8 @@ app.get('/api', (req, res) => {
 
             for(let i = 0; i < matches.length; i++) {
                 console.log(matches[i].name)
+                name = matches[i].name
             }
-            res.json(matches)
         })
         .catch(err => {
             // Failure
@@ -51,6 +55,11 @@ app.get('/api', (req, res) => {
     console.log('route hit')
     // res.json(results)
 })
+
+
+
+
 app.listen(8080, () => {
     console.log(`Example app listening on port 8080`)
   })
+
