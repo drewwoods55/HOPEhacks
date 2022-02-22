@@ -21,7 +21,7 @@ app.use(express.static('public'));
 //registering a callback to run only when someone request "/"
 app.get('/api', (req, res) => {
     // Set any parameters, if applicable (see API documentation for allowed params)
-    let params = [{ location: 'Charlotte, NC', categories: 'vegan' }]
+    let params = [{ location: 'Charlotte, NC', categories: 'vegetarian' }]
     let results = {}
     let name =
         // Call the endpoint

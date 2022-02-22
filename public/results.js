@@ -18,7 +18,8 @@ function likedResult(event){
     showResult(globalIndex)
      //increament the globalIndex
      globalIndex ++
-}
+//      alert('Resturant added to your favorites!')
+ }
 function deniedResult(event){
     //increament the globalIndex
     globalIndex ++
