@@ -6,8 +6,7 @@ let yelpAPI = require('yelp-api');
 const { on } = require('nodemon');
 let apiKey = "ISf113DyzF1u1R1vkBRkq3InpLkuVexUWUG1JNoHR1UdtL-bMy4SdObvqD_2te27iSrG97iSxZdSlBI02Mmttnn_B2_GrCcXIzD2O4oB0GlJ31N1F9AvomYz3CwMYnYx"
 let yelp = new yelpAPI(apiKey);
-nextButton =
-    goToNext =
+
 
 
     // app.use(express.static('public'));
@@ -29,7 +28,7 @@ app.get('/api', (req, res) => {
 
 
     // Set any parameters, if applicable (see API documentation for allowed params)
-    let params = [{ location: 'Charlotte, NC', categories: 'vegan' }]
+    let params = [{ location: 'Charlotte, NC', categories: 'vegetarian' }]
     let results = {}
     let name =
 
