@@ -2,7 +2,7 @@
 // // const { response } = require("express")
 // =======
 // <<<<<<< HEAD
-const menu = document.querySelector('3mobile-menu')
+const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
 // const mainBtn = document.querySelector()
 // =======
@@ -16,6 +16,7 @@ menu.addEventListener('click', function(){
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
 })
+
 
 // we will have to call this api and display results on the client side page
 // fetch("/api").then(res => { return res.json() }).then(data => { 

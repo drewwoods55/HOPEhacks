@@ -148,10 +148,6 @@
 
 
 /* Hero scetion */
-.main {
-  background-color: #141414;
-}
-
 .main__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -188,16 +184,14 @@
   text-align: center;
   max-width: 50px;
 }
-.image__container{
-  max-width: 100px;
-}
-.yelp_image{
-  max-width: 100px;
+.main {
+  max-height: 60%;
 }
 
 #main__img {
- height: 80%;
- width: 80%;
+ height: 60%;
+ width: 100%;
+ margin: auto;
 }
 
 /* mobile responsive */
@@ -247,9 +241,10 @@
 .swiping {
   background: white ;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  height: 100vh;
+  max-height: 40%;
+  padding-top: 5%;
 }
 
 .denied {
@@ -257,6 +252,7 @@
   border-radius: 10px;
   margin: 20px;
   color: red;
+  /* float: right; */
 }
 
 .liked {
@@ -264,26 +260,65 @@
   border-radius: 10px;
   margin: 20px;
   color: green;
+ /* float: left; */
+}
+
+.iconClass {
+  width: 25%;
+  padding: -100px auto; 
+  padding-top: -20px; 
+  text-align: center;
+}
+.textAndPic {
+  width: 50%;
+}
+
+.pickMyFoodClass {
+  width: 50%;
+}
+
+
+.headerBox {
+  padding-top: 10%;
+padding-bottom: 25%;
+min-width: 400px;
+text-align: center;
 }
 
 .swiping__container {
-  background-color: red;
   width: 60%;
-  min-width: 520px;
+  margin: 0px auto;
+  min-width: 400px;
   position: relative;
-  transform: translate(-50%, -50%);
-  left: 30%;
-  top: 15%;
+  transform: translate(-25%, -25%);
+  left:25%;
+  /* top: 15%; */
   border-radius: 5px;
   padding: 30px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
   justify-content: center;
 }
 
 .image__container {
   position: relative;
   width: 100%;
-  border: 1px solid black;
+  margin: auto;
+}
+
+.yelp_image{
+  max-height: 400px;
+  width: 100%;
+}
+
+.yelp_name {
+  text-align: center;
+}
+
+.textContainer {
+  margin: 2px;
+}
+
+.yelp_rating {
+  text-align: center;
 }
 
 #content1 {
