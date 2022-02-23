@@ -1,25 +1,28 @@
-<<<<<<< HEAD
-// const { response } = require("express")
-=======
-<<<<<<< HEAD
-const menu = document.querySelector('3mobile-menu')
+// <<<<<<< HEAD
+// // const { response } = require("express")
+// =======
+// <<<<<<< HEAD
+const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
-const mainBtn = document.querySelector()
-=======
->>>>>>> 8c079df939bb14636cfef582fdb94967bea31f84
+// const mainBtn = document.querySelector()
 // const menu = document.querySelector('3mobile-menu')
 // const menuLinks = document.querySelector('.navbar__menu')
-<<<<<<< HEAD
+// var restaurantList = [];
+// =======
+// // const mainBtn = document.querySelector()
+// // =======
+// // >>>>>>> 8c079df939bb14636cfef582fdb94967bea31f84
+// // // const menu = document.querySelector('3mobile-menu')
+// // // const menuLinks = document.querySelector('.navbar__menu')
+// // var restaurantList = [];
+// >>>>>>> Seth
+// // const { response } = require("express")
 
-=======
-var restaurantList = [];
->>>>>>> 7047c98ca485051c759fc9fbc82fd6bb2e3ce91f
-// const { response } = require("express")
+menu.addEventListener('click', function(){
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+})
 
-// menu.addEventListener('click', function(){
-//     menu.classList.toggle('is-active');
-//     menuLinks.classList.toggle('active');
-// })
 
 // we will have to call this api and display results on the client side page
 // fetch("/api").then(res => { return res.json() }).then(data => { 
@@ -33,33 +36,45 @@ var restaurantList = [];
 //     menuLinks.classList.toggle('active');
 // });
 
-document.getElementById('denied').onclick = function changeContent() {
+// document.getElementById('denied').onclick = function changeContent() {
     
-<<<<<<< HEAD
+//   })
+// }
+// fetchData()
+// =======
+// menu.addEventListener('click', function(){
+//     menu.classList.toggle('is-active');
+//     menuLinks.classList.toggle('active');
+// });
 
+// <<<<<<< HEAD
     
-    }
-=======
-  })
-}
-fetchData()
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 57f51705c6321da28a0b736e1ddb67c935bb9286
-menu.addEventListener('click', function(){
-    menu.classList.toggle('is-active');
-    menuLinks.classList.toggle('active');
-});
+//     }
+// =======
+//   })
+// }
+// fetchData()
+// <<<<<<< HEAD
+// =======
+// =======
+// >>>>>>> 57f51705c6321da28a0b736e1ddb67c935bb9286
+// menu.addEventListener('click', function(){
+//     menu.classList.toggle('is-active');
+//     menuLinks.classList.toggle('active');
+// });
 
-<<<<<<< HEAD
-function toSwipe() {
-    document.getElementById('#mainbtn').onclick = function () {
-        location.href = ""
-    }
-}
-=======
->>>>>>> f7b7c4ec70333827050c90bb008ca9928e567861
->>>>>>> 57f51705c6321da28a0b736e1ddb67c935bb9286
->>>>>>> 8c079df939bb14636cfef582fdb94967bea31f84
->>>>>>> 7047c98ca485051c759fc9fbc82fd6bb2e3ce91f
+// <<<<<<< HEAD
+// function toSwipe() {
+//     document.getElementById('#mainbtn').onclick = function () {
+//         location.href = ""
+//     }
+// }
+// =======
+// >>>>>>> f7b7c4ec70333827050c90bb008ca9928e567861
+// >>>>>>> 57f51705c6321da28a0b736e1ddb67c935bb9286
+// >>>>>>> 8c079df939bb14636cfef582fdb94967bea31f84
+// >>>>>>> 7047c98ca485051c759fc9fbc82fd6bb2e3ce91f
+// =======
+// // >>>>>>> 57f51705c6321da28a0b736e1ddb67c935bb9286
+// // >>>>>>> 8c079df939bb14636cfef582fdb94967bea31f84
+// >>>>>>> Seth
