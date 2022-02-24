@@ -27,7 +27,7 @@ function deniedResult(event){
     showResult(globalIndex)
 }
 function fetchData(){
-    fetch("http://localhost:8080/api").then(resp =>{
+    fetch("/api").then(resp =>{
       //   restaurantList = resp;
         return resp.json();
       })
