@@ -28,7 +28,7 @@ function likedResult(event) {
     
     //increament the globalIndex
     globalIndex++
-    alert('Resturant added to your favorites!')
+    // alert('Resturant added to your favorites!')
 }
 
 function deniedResult(event) {
@@ -42,7 +42,7 @@ function deniedResult(event) {
 
 
 function fetchData() {
-    fetch("http://localhost:8080/api").then(resp => {
+    fetch("/api").then(resp => {
         //   restaurantList = resp;
         return resp.json();
     })

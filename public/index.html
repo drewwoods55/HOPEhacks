@@ -1,84 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <title>Order Mob</title>
-    <link rel="stylesheet" href="style.css"/>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Order Mob</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
+
 <body>
-   <nav class="navbar">
-       <div class="navbar__container">
-        <div class="logo">
-          <img src="images/logo-remove.png" alt="logo" width="100px">
+  <nav class="navbar">
+    <div class="navbar__container">
+      <div class="logo">
+        <img src="images/logo-remove.png" alt="logo" width="100px">
       </div>
-           <div class="navbar__toggle" id="mobile-menu">
-               <span class="bar"></span>
-               <span class="bar"></span>
-               <span class="bar"></span>
-           </div>
-           <ul class="navbar__menu">
-               <li class="navbar__item">
-                   <a href="index.html" class="navbar__links">Home</a>
-               </li>
-               <li class="navbar__item">
-                <a href="favorites.html" class="navbar__links">Favorites</a>
-            </li>
-            <li class="navbar__item">
-                <a href="/contact.html" class="navbar__links">Contacts</a>
-            </li>
-           </ul>
-       </div>
-   </nav>
-
-
-<!--Hero Section-->
-<div class="main">
-  <div class="main__container">
-    <div class="main__content">
-      <h1>ORDER MOB</h1>
-      <p>Get your crave satisfied.</p>
-      <p>Scroll down to get started</p>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="index.html" class="navbar__links">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="favorites.html" class="navbar__links">Favorites</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/contact.html" class="navbar__links">Contacts</a>
+        </li>
+      </ul>
     </div>
-    <div class="main_img--container">
-      <img src="images/taco-pic.jpeg" alt="tacos" id="main__img">
+  </nav>
+
+
+  <!--Hero Section-->
+  <div class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <h1>ORDER MOB</h1>
+        <p>Get your crave satisfied.</p>
+        <p>Scroll down to get started</p>
+      </div>
+      <div class="main_img--container">
+        <img src="images/taco-pic.jpeg" alt="tacos" id="main__img">
+      </div>
     </div>
   </div>
-</div>
   <script src="app.js"></script>
-  <script> 
+  <script>
      // restaurantList.json
   </script>
 
 
 
-<!--Swiping Section-->
-<div class="swiping">
-  <h1>Lets see what your craving</h1>
-  <span id="deniedButton" class="denied"><ion-icon name="close-circle-outline"></ion-icon></span>
-  <div id="biz_result" class="swiping__container">
+  <!--Swiping Section-->
+  <div class="swiping">
+    <h1>Lets see what your craving</h1>
+    <span id="deniedButton" class="denied">
+      <ion-icon name="close-circle-outline"></ion-icon>
+    </span>
+    <div id="biz_result" class="swiping__container">
 
-    
+
+    </div>
+    <span id="likeButton" class="liked">
+      <ion-icon name="checkmark-circle-outline"></ion-icon>
+    </span>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   </div>
-  <span id="likeButton" class="liked"><ion-icon name="checkmark-circle-outline"></ion-icon></span>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-</div>
 
-<template id="result_template">
-  <div class="image__container">
-    <img class="yelp_image" src="https://s3-media3.fl.yelpcdn.com/bphoto/pn9TntqmTu1_r9JzZ2LJJQ/o.jpg" alt="Eastside local Eatery" >
-  </div>
-  <div class="yelp_name"> Eastside local Eatery </div>
-  <div class="yelp_rating"> Rating : 4.5</div>
-  <!-- <div class="yelp_url"> https://www.yelp.com/biz/eastside-local-charlotte?adjust_creative=cty4TBfbfidh4keZT8UySA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=cty4TBfbfidh4keZT8UySA</div> -->
-</template>
+  <template id="result_template">
+    <div class="image__container">
+      <img class="yelp_image" src="https://s3-media3.fl.yelpcdn.com/bphoto/pn9TntqmTu1_r9JzZ2LJJQ/o.jpg"
+        alt="Eastside local Eatery">
+    </div>
+    <div class="yelp_name"> Eastside local Eatery </div>
+    <div class="yelp_rating"> Rating : 4.5</div>
+    <!-- <div class="yelp_url"> https://www.yelp.com/biz/eastside-local-charlotte?adjust_creative=cty4TBfbfidh4keZT8UySA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=cty4TBfbfidh4keZT8UySA</div> -->
+  </template>
 
-<!-- Start Footer bottom Area -->
-<footer>
+  <!-- Start Footer bottom Area -->
+  <footer>
     <section class="footer-area-bottom">
       <div class="container">
         <div class="row-footer">
@@ -124,6 +131,7 @@
       </div>
     </section>
   </footer>
-<script type="text/javascript" src="results.js"></script>
+  <script type="text/javascript" src="results.js"></script>
 </body>
+
 </html>

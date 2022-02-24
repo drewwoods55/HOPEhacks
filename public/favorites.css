@@ -1,6 +1,45 @@
-h1{
-    font-size:25px;
-    text-align:center;
-    font-family: 'Kumbh Sans', sans-serif;
-    color: red;
+h2{
+    font-size: 2rem;
+    background-color: #FF8177;
+    background-image: linear-gradient(to top, #FF0844 0%, #FFB199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: center;
   }
+  
+  * {
+    box-sizing: border-box;
+  }
+  main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    width: 100%;
+    display: grid;
+    /* Define Auto Row size */
+    grid-auto-rows: 100px;
+    /*Define our columns */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  article {
+   padding: 20px;
+   margin-top: 1rem;
+   font-size: 1rem;
+   font-weight: 700;
+   color: black;
+   text-align: center;
+  }
+
+
+
+
+
+
+
+
+
